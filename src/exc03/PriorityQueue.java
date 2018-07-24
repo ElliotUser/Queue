@@ -32,8 +32,12 @@ public class PriorityQueue {
         return queArray[--nItems];
     }
 
-    public long preekMin(){
+    public long peekMin(){
         return queArray[nItems-1];
+    }
+
+    public long peekMax(){
+        return  queArray[nItems-nItems];   //мдаааа лажа, но работает ВЕДЬ ахахахха
     }
 
     public boolean isEmpty(){
